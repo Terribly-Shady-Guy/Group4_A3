@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
 
-class PaulFactPage extends StatelessWidget {
-  const PaulFactPage({super.key});
+class AbdishakurFunFact extends StatelessWidget {
+  const AbdishakurFunFact({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
-        title: Text("Paul's Page"),
+        backgroundColor: Color.fromARGB(255, 193, 10, 199),
+        title: Text("Abdishakur's Page"),
       ),
       body: Center(
         child: Column(
@@ -18,7 +18,7 @@ class PaulFactPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: const Text(
-                'Fun fact, Paul is borderline obsessed with the NBA',
+                'My fun fact is that i am somali but was born in Ethiopia.',
                 style: TextStyle(fontSize: 21),
               ),
             ),

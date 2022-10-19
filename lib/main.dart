@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'widgets/tyler_fact_widget.dart';
 import 'widgets/aaronFunFact.dart';
 import 'widgets/paul_fact_widget.dart';
+import 'widgets/abdishakurFunFact.dart';
 
 void main() {
   runApp(const MyApp());
@@ -58,10 +59,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           builder: (context) => const TylerFactPage())),
                   style:
                       ElevatedButton.styleFrom(backgroundColor: Colors.green),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: const Text("To Tyler's page"),
-                  )),
+                  child: Text("To Tyler's page"),
+                  ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -72,10 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           builder: (context) => const AaronFactPage())),
                   style:
                       ElevatedButton.styleFrom(backgroundColor: Colors.orange),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: const Text("To Aaron's page"),
-                  )),
+                  child: Text("To Aaron's page"),
+                  ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -85,10 +82,20 @@ class _MyHomePageState extends State<MyHomePage> {
                       MaterialPageRoute(
                           builder: (context) => const PaulFactPage())),
                   style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: const Text("To Paul's page"),
-                  )),
+                  child: Text("To Paul's page"),
+                  ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const AbdishakurFunFact())),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.purple),
+                  child:
+                    Text("To Abdishakur's page"),
+                  ),
             )
           ],
         ),
