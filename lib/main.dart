@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/tyler_fact_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,6 +44,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Group 4 Application',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
+            ElevatedButton(
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const TylerFactPage())),
+                child: const Text("To Tyler's page"))
           ],
         ),
       ),
