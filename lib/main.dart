@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'widgets/tyler_fact_widget.dart';
-
+import 'widgets/aaronFunFact.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -50,7 +50,14 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(
                         builder: (context) => const TylerFactPage())),
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-                child: const Text("To Tyler's page"))
+                child: const Text("To Tyler's page")),
+            ElevatedButton(
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const AaronFactPage())),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
+                child: const Text("To Aaron's page"))
           ],
         ),
       ),
