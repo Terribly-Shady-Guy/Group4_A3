@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'widgets/tyler_fact_widget.dart';
-
+import 'widgets/aaronFunFact.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -40,17 +40,39 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            const Text(
-              'Group 4 Application',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: const Text(
+                'Group 4 Application',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
-            ElevatedButton(
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const TylerFactPage())),
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
-                child: const Text("To Tyler's page"))
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const TylerFactPage())),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: const Text("To Tyler's page"),
+                  )),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                  onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const AaronFactPage())),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: const Text("To Aaron's page"),
+                  )),
+            )
           ],
         ),
       ),
