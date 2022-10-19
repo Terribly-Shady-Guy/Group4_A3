@@ -49,6 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const TylerFactPage())),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
                 child: const Text("To Tyler's page"))
           ],
         ),
