@@ -15,9 +15,12 @@ class AaronFactPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            const Text(
-              'I will have you know that Aaron was in a bowling league for 17 years',
-              style: TextStyle(fontSize: 20),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: const Text(
+                'I will have you know that Aaron was in a bowling league for 17 years',
+                style: TextStyle(fontSize: 21),
+              ),
             ),
             ElevatedButton(
                 onPressed: () => Navigator.push(
